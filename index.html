@@ -1,0 +1,325 @@
+<link rel="stylesheet" href="styles.css">
+<nav id="navbar">
+  <header>Python Documentation</header>
+  <ul>
+    <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+    <li>
+      <a class="nav-link" href="#History_of_Python"
+        >History of Python</a
+      >
+    </li>
+    <li>
+      <a class="nav-link" href="#About_Python">About Python</a>
+    </li>
+    <li><a class="nav-link" href="#Hello_world">Hello world</a></li>
+    <li><a class="nav-link" href="#Variables">Variables</a></li>
+    <li>
+      <a class="nav-link" href="#Identifier_Naming">Identifier Naming</a>
+    </li>
+    <li><a class="nav-link" href="#Local_Scope">Local scope</a></li>
+    <li><a class="nav-link" href="#Global_variables">Global variables</a></li>
+    <li><a class="nav-link" href="#Global_Keyword">Global Keyword</a></li>
+    <li><a class="nav-link" href="#Data_types">Data types</a></li>
+    <li>
+      <a class="nav-link" href="#if...else_statement">if...else statement</a>
+    </li>
+    <li><a class="nav-link" href="#while_statement">while statement</a></li>
+    <li>
+      <a class="nav-link" href="#Arrays"
+        >Arrays</a
+      >
+    </li>
+    <li><a class="nav-link" href="#Reference">Reference</a></li>
+  </ul>
+</nav>
+<main id="main-doc">
+  <section class="main-section" id="Introduction">
+    <header>Introduction</header>
+    <article>
+      <p>
+       Python is an easy to learn, powerful programming language. It has efficient high-level data structures and a simple but effective approach to object-oriented programming. Python’s elegant syntax and dynamic typing, together with its interpreted nature, make it an ideal language for scripting and rapid application development in many areas on most platforms.
+      </p>
+
+      <p>
+        The Python interpreter and the extensive standard library are freely available in source or binary form for all major platforms from the Python Web site, https://www.python.org/, and may be freely distributed. The same site also contains distributions of and pointers to many free third party Python modules, programs and tools, and additional documentation.
+      </p>
+      <ul>
+      </ul>
+    </article>
+  </section>
+  <section class="main-section" id="History_of_Python">
+    <header>History of Python</header>
+    <article>
+      <p>In the late 1980s, history was about to be written. It was that time when working on Python started. Soon after that, Guido Van Rossum began doing its application based work in December of 1989 by at Centrum Wiskunde & Informatica (CWI) which is situated in Netherland. It was started firstly as a hobby project because he was looking for an interesting project to keep him occupied during Christmas. The programming language which Python is said to have succeeded is ABC Programming Language, which had the interfacing with the Amoeba Operating System and had the feature of exception handling. He had already helped to create ABC earlier in his career and he had seen some issues with ABC but liked most of the features. </p>
+
+    </article>
+  </section>
+  <section class="main-section" id="About_Python">
+    <header>About Python</header>
+    <article>
+      <p>
+        Python is an interpreted, object-oriented, high-level programming language with dynamic semantics. Its high-level built in data structures, combined with dynamic typing and dynamic binding, make it very attractive for Rapid Application Development, as well as for use as a scripting or glue language to connect existing components together. Python's simple, easy to learn syntax emphasizes readability and therefore reduces the cost of program maintenance. Python supports modules and packages, which encourages program modularity and code reuse. The Python interpreter and the extensive standard library are available in source or binary form without charge for all major platforms, and can be freely distributed.
+      </p>
+    </article>
+  </section>
+  <section class="main-section" id="Hello_world">
+    <header>Hello world</header>
+    <article>
+      A simple program that displays “Hello, World!”. It's often used to illustrate the syntax of the language.
+      <code
+        >print('Hello, world!')
+      </code>
+
+      In this program, we have used the built-in print() function to print the string Hello, world! on our screen.
+    </article>
+  </section>
+  <section class="main-section" id="Variables">
+    <header>Variables</header>
+    <p>
+      Variable is a name that is used to refer to memory location. Python variable is also known as an identifier and used to hold value.
+
+In Python, we don't need to specify the type of variable because Python is a infer language and smart enough to get variable type.
+
+Variable names can be a group of both the letters and digits, but they have to begin with a letter or an underscore.
+    </p>
+    <p>
+      It is recommended to use lowercase letters for the variable name. Rahul and rahul both are two different variables.
+    </p>
+    <p>
+      
+    </p>
+  </section>
+  <section class="main-section" id="Identifier_Naming">
+    <header>Identifier Naming</header>
+    <article>
+      Variables are the example of identifiers. An Identifier is used to identify the literals used in the program. The rules to name an identifier are given below.
+      <p>
+        The first character of the variable must be an alphabet or underscore ( _ ).
+      </p>
+      <p>
+        Identifier name must not contain any white-space, or special character (!, @, #, %, ^, &, *).
+      </p>
+      <p>
+        Identifier name must not be similar to any keyword defined in the language.
+      </p>
+      <p>
+        Identifier names are case sensitive; for example, my name, and MyName is not the same.
+      </p>
+      <p>
+        Examples of valid identifiers: a123, _n, n_9, etc.
+      </p>
+    </article>
+  </section>
+  <section class="main-section" id="Local_Scope">
+    <header>Local Scope</header>
+    <article>
+      <p>
+        A variable created inside a function belongs to the local scope of that function, and can only be used inside that function.
+      </p>
+
+      <p>
+        A variable created inside a function is available inside that function:
+
+
+      </p>
+      <code>def myfunc():
+  x = 300
+  print(x)
+
+myfunc()</code>
+      
+    </article>
+  </section>
+  <section class="main-section" id="Global_variables">
+    <header>Global variables</header>
+    <article>
+      <p>
+        A variable created in the main body of the Python code is a global variable and belongs to the global scope.
+      </p>
+
+      <p>
+        Global variables are available from within any scope, global and local.
+      <code>x = 300
+def myfunc():
+  print(x)
+myfunc()
+        print(x)</code>
+      </p>
+    </article>
+  </section>
+  <section class="main-section" id="Global_Keyword">
+    <header>Global Keyword
+</header>
+    <article>
+      <p>
+        If you need to create a global variable, but are stuck in the local scope, you can use the global keyword.
+
+
+      </p>
+
+      <code>def myfunc():
+  global x
+  x = 300
+myfunc()
+print(x)</code>
+      <p>
+        Also, use the global keyword if you want to make a change to a global variable inside a function.
+
+
+      </p>
+
+      <code
+        >x = 300
+
+def myfunc():
+  global x
+  x = 200
+myfunc()
+print(x)</code
+      >
+      To change the value of a global variable inside a function, refer to the variable by using the global keyword:
+
+      <code
+        >x = 300
+def myfunc():
+  global x
+  x = 200
+myfunc()
+print(x)
+</code
+      >
+    </article>
+  </section>
+  <section class="main-section" id="Data_types">
+    <header>Data types</header>
+    <article>
+      <p>In programming, data type is an important concept.
+
+Variables can store data of different types, and different types can do different things.
+
+Python has the following data types built-in by default, in these categories:</p>
+      <ul>
+        <li>
+          <ul>
+            <li>Text Type:	str</li>
+            <li>
+              Numeric Types:	int, float, complex
+              other variant.
+            </li>
+            <li>Sequence Types:	list, tuple, range</li>
+            <li>Mapping Type:	dict</li>
+            <li>Set Types:	set, frozenset</li>
+            <li>
+              Boolean Type:	bool
+            </li>
+          </ul>
+        </li>
+
+        <li>Binary Types:	bytes, bytearray, memoryview</li>
+      </ul>
+    </article>
+  </section>
+  <section class="main-section" id="if...else_statement">
+    <header>if...else statement</header>
+    <article>
+     Python supports the usual logical conditions from mathematics:
+
+Equals: a == b
+Not Equals: a != b
+Less than: a < b
+Less than or equal to: a <= b
+Greater than: a > b
+Greater than or equal to: a >= b
+
+      <code>a = 33
+b = 200
+if b > a:
+  print("b is greater than a")</code>
+      In this example we use two variables, a and b, which are used as part of the if statement to test whether b is greater than a. As a is 33, and b is 200, we know that 200 is greater than 33, and so we print to screen that "b is greater than a".
+      <p>
+        Python relies on indentation (whitespace at the beginning of a line) to define scope in the code. Other programming languages often use curly-brackets for this purpose.
+      </p>
+      <code
+        >a = 33
+b = 200
+if b > a:
+print("b is greater than a") # you will get an error
+      </code>
+    If statement, without indentation (will raise an error):
+
+    </article>
+  </section>
+  <section class="main-section" id="while_statement">
+    <header>while statement</header>
+    <article>
+     With the while loop we can execute a set of statements as long as a condition is true.
+
+      <code>i = 1
+while i < 6:
+  print(i)
+  i += 1</code> 
+        Print i as long as i is less than 6:
+      <p>
+        With the break statement we can stop the loop even if the while condition is true:
+      </p>
+
+      Example:
+
+      <p>Exit the loop when i is 3:
+</p>
+
+      <code>i = 1
+while i < 6:
+  print(i)
+  if i == 3:
+    break
+  i += 1</code>
+        
+    </article>
+  </section>
+  <section class="main-section" id="Arrays">
+    <header>Arrays</header>
+    <article>
+      Arrays are used to store multiple values in one single variable:
+
+      <ul>
+        <li>Create an array containing car names:</li>
+        <code>
+          cars = ["Ford", "Volvo", "BMW"]
+        </code>
+        <li>
+          An array is a special variable, which can hold more than one value at a time.
+        </li>
+      </ul>
+      <p>
+        If you have a list of items (a list of car names, for example), storing the cars in single variables could look like this:
+      </p>
+
+      <code>car1 = "Ford"
+car2 = "Volvo"
+car3 = "BMW"</code>
+      <p>
+       However, what if you want to loop through the cars and find a specific one? And what if you had not 3 cars, but 300?
+
+The solution is an array!
+
+An array can hold many values under a single name, and you can access the values by referring to an index number.
+      </p>
+    </article>
+  </section>
+  <section class="main-section" id="Reference">
+    <header>Reference</header>
+    <article>
+      <ul>
+        <li>
+          All the documentation in this page is taken from
+          <a
+            href="https://www.w3schools.com/python/default.asp"
+            target="_blank"
+            >w3schools</a
+          >
+        </li>
+      </ul>
+    </article>
+  </section>
+</main>
